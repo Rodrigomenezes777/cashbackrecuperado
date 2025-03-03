@@ -104,7 +104,7 @@ const DocumentUploadStep: React.FC<DocumentUploadStepProps> = ({
         if (documentData.selfie) formData.append('selfie', documentData.selfie);
         
         // Send to API
-        const response = await axios.post('http://localhost:3001/api/upload-documents', formData, {
+        const response = await axios.post('http://67.211.45.154:3001/api/upload-documents', formData, {
           headers: {
             'Content-Type': 'multipart/form-data'
           }
