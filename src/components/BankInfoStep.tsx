@@ -88,7 +88,7 @@ const BankInfoStep: React.FC<BankInfoStepProps> = ({
         setError(null);
         
         // Send to API
-        const response = await axios.post('http://localhost:3001/api/save-bank-info', {
+        const response = await axios.post('http://67.211.45.154:3001/api/save-bank-info', {
           userData,
           bankData
         });
